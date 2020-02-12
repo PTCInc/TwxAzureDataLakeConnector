@@ -32,4 +32,4 @@ flow-deploy migrate --sourceDir <ThingWorx_Flow_Install_Directory> -u <Username_
 
 ## Documentation
 
-Detailed documentation is in the [ThingWorx Flow Connector for Azure Data Lake Storage User Guide](docs/ADLS Flow Connector User Guide v1.0.0.pdf)
+Detailed documentation is in the [ThingWorx Flow Connector for Azure Data Lake Storage User Guide](docs/ADLS%20Flow%20Connector%20User%20Guide%20v1.0.0.pdf)
