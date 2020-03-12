@@ -1,0 +1,49 @@
+{
+  "name": "adls-sharedkey",
+  "created_at": "2019-11-06T16:51:15.299Z",
+  "updated_at": "2019-11-06T16:51:15.299Z",
+  "uid": "4c4b257f4b184d79a20a2fcc6fb5353c",
+  "icon": "adls-storage-account",
+  "usage": "",
+  "version": "v1",
+  "label": "adls:conn_sharedkey_title",
+  "__v": 0,
+  "development_phase": "gold",
+  "advanced_enabled": true,
+  "express_enabled": true,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "deleted_at": null,
+  "input": {
+    "type": "object",
+    "title": "adls:conn_sharedkey_credentials_title",
+    "format": "table",
+    "properties": {
+      "storageAccountName": {
+        "type": "string",
+        "minLength": 1,
+        "propertyOrder": 1,
+        "title": "adls:conn_sharedkey_account_name",
+        "description": "adls:conn_sharedkey_account_name_description"
+      },
+      "storageAccountAccessKey": {
+        "type": "string",
+        "minLength": 1,
+        "propertyOrder": 2,
+        "title": "adls:conn_sharedkey_accountkey",
+        "description": "adls:conn_sharedkey_accountkey_description"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "handle": {
+        "type": "object",
+        "title": "handle"
+      }
+    }
+  }
+}

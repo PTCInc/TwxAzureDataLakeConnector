@@ -1,0 +1,145 @@
+{
+  "name": "adls-list-blobs",
+  "created_at": "2019-11-12T18:34:06.046Z",
+  "updated_at": "2019-11-12T18:34:06.046Z",
+  "uid": "e09fd179397e4097965f0a2e817002db",
+  "usage": {
+    "html": "adls:act_list_blobs_label",
+    "link": {
+      "title": "Add title for the help link",
+      "href": "Add help link"
+    }
+  },
+  "default_value": "",
+  "act_type": "default",
+  "icon": "adls-list-blobs",
+  "version": "v1",
+  "label": "adls:act_list_blobs_label",
+  "__v": 0,
+  "validation": null,
+  "marketing_category": "file - storage",
+  "featured": false,
+  "development_phase": "beta",
+  "advanced_enabled": true,
+  "express_enabled": false,
+  "deleted_at": null,
+  "hide_settings": false,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "category": "service",
+  "input": {
+    "title": "adls:act_list_blobs_label",
+    "type": "object",
+    "properties": {
+      "connection": {
+        "title": "adls:act_conn_sharedkey",
+        "type": "string",
+        "minLength": 1,
+        "connection": "adls-sharedkey"
+      },
+      "containerName": {
+        "title": "adls:act_list_blobs_in_container_name",
+        "displayTitle": "adls:act_list_blobs_in_container_name",
+        "description": "adls:act_list_blobs_in_container_name",
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "output": {
+    "title": "adls:act_list_blobs_output_title",
+    "type": "object",
+    "properties": {
+      "entries": {
+        "type": "array",
+        "title": "adls:act_list_blobs_entries_display_title",
+        "displayTitle": "adls:act_list_blobs_entries_display_title",
+        "items": {
+          "title": "adls:act_list_blobs_entries_items_display_title",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "adls:act_list_blobs_entries_items_blob_name",
+              "displayTitle": "adls:act_list_blobs_entries_items_blob_name"
+            },
+            "creationTime": {
+              "type": "string",
+              "title": "creation time"
+            },
+            "lastModified": {
+              "type": "string",
+              "title": "last modified"
+            },
+            "etag": {
+              "type": "string",
+              "title": "etag"
+            },
+            "leaseStatus": {
+              "type": "string",
+              "title": "least status"
+            },
+            "leastState": {
+              "type": "string",
+              "title": "lease state"
+            },
+            "contentLength": {
+              "type": "integer",
+              "title": "content length"
+            },
+            "contentType": {
+              "type": "string",
+              "title": "content type"
+            },
+            "contentEncoding": {
+              "type": "string",
+              "title": "content encoding"
+            },
+            "contentLanguage": {
+              "type": "string",
+              "title": "content language"
+            },
+            "contentDisposition": {
+              "type": "string",
+              "title": "content disposition"
+            },
+            "cacheControl": {
+              "type": "string",
+              "title": "cache control"
+            },
+            "blobType": {
+              "type": "string",
+              "title": "blob type"
+            },
+            "serverEncrypted": {
+              "type": "boolean",
+              "title": "server encrypted"
+            },
+            "accessTier": {
+              "type": "string",
+              "title": "access tier"
+            },
+            "accessTierChangeTime": {
+              "type": "string",
+              "title": "access tier change time"
+            },
+            "Content_CRC64": {
+              "type": "string",
+              "title": "Content-CRC64"
+            },
+            "contentMD5_type": {
+              "type": "string",
+              "title": "content MD5 type"
+            },
+            "contentMD5_data": {
+              "type": "string",
+              "title": "content MD5 data"
+            }
+          }
+        }
+      }
+    }
+  }
+}

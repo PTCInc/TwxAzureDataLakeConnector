@@ -1,0 +1,94 @@
+{
+  "name": "adls-upload-blob",
+  "created_at": "2019-11-18T21:21:13.118Z",
+  "updated_at": "2019-11-18T21:21:13.118Z",
+  "uid": "66704aab285a4cbb8421320915a089bc",
+  "usage": {
+    "html": "adls:act_upload_blob_label",
+    "link": {
+      "title": "Add title for the help link",
+      "href": "Add help link"
+    }
+  },
+  "default_value": "",
+  "act_type": "default",
+  "icon": "adls-upload-blob",
+  "version": "v1",
+  "label": "adls:act_upload_blob_label",
+  "__v": 0,
+  "validation": null,
+  "marketing_category": "file - storage",
+  "featured": false,
+  "development_phase": "beta",
+  "advanced_enabled": true,
+  "express_enabled": false,
+  "deleted_at": null,
+  "hide_settings": false,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "category": "service",
+  "input": {
+    "title": "adls:act_upload_blob_label",
+    "type": "object",
+    "properties": {
+      "connection": {
+        "title": "adls:act_conn_sharedkey",
+        "type": "string",
+        "minLength": 1,
+        "connection": "adls-sharedkey"
+      },
+      "containerName": {
+        "title": "adls:act_upload_blob_in_container_name",
+        "displayTitle": "adls:act_upload_blob_in_container_name",
+        "description": "adls:act_upload_blob_in_container_name",
+        "type": "string",
+        "minLength": 1
+      },
+      "blobName": {
+        "title": "adls:act_upload_blob_in_blob_name",
+        "displayTitle": "adls:act_upload_blob_in_blob_name",
+        "description": "adls:act_upload_blob_in_blob_name",
+        "type": "string",
+        "minLength": 1
+      },
+      "data": {
+        "type": "string",
+        "title": "adls:act_upload_blob_in_data",
+        "displayTitle": "adls:act_upload_blob_in_data",
+        "description": "adls:act_upload_blob_in_data",
+        "minLength": 1
+      },
+      "encoding": {
+        "type": "string",
+        "title": "adls:act_upload_blob_in_encoding",
+        "displayTitle": "adls:act_upload_blob_in_encoding",
+        "description": "adls:act_upload_blob_in_encoding",
+        "minLength": 1,
+        "default": "utf8",
+        "enum": [
+          "ascii",
+          "binary",
+          "base64",
+          "buffer",
+          "hex",
+          "ucs2",
+          "utf16le",
+          "utf8"
+        ]
+      }
+    }
+  },
+  "output": {
+    "title": "adls:act_upload_blob_output_title",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "adls:act_upload_blob_out_name_uploaded",
+        "displayTitle": "adls:act_upload_blob_out_name_uploaded"
+      }
+    }
+  }
+}

@@ -8,16 +8,16 @@ Azure Storage is a Microsoft-managed service providing cloud storage that is hig
 
 The connector runs in ThingWorx Flow and is built on node.js and utilizes Microsoft’s Azure Storage libraries for JavaScript. The connector is intended to work similarly to other storage providers like Box, Dropbox, Google Drive, and OneDrive.
 
-## Installation
+## Installation from ZIP file
 
 1. Download the latest version of the connector from [dist/ptc-adls-connector-1-0-0.zip](dist/ptc-adls-connector-1-0-0.zip)
 2. Open a shell or terminal window on the ThingWorx Flow server.
 3. Copy the ptc-adls-connector-1-0-0.zip file to any directory.
-4. Unzip the ptc-adls-connector-1-0-0.zip file.
+4. Unzip the ptc-adls-connector-1-0-0.zip file:
 ```bash
 unzip ptc-adls-connector-1-0-0.zip
 ```
-5. Change into the ptc-adls-connector directory.
+5. Change into the ptc-adls-connector directory:
 ```bash
 cd ptc-adls-connector
 ```
@@ -27,7 +27,28 @@ flow-deploy connector --sourceDir . --targetDir <ThingWorx_Flow_Install_Director
 ```
 7. Run the following command to load connector metadata into the ThingWorx Flow server:
 ```bash
-flow-deploy migrate --sourceDir <ThingWorx_Flow_Install_Directory> -u <Username_for_ThingWorx_Flow_Database> -p <Password_for_ThingWorx_Flow_Database>
+flow-deploy migrate -u <Username_for_ThingWorx_Flow_Database> -p <Password_for_ThingWorx_Flow_Database> --sourceDir <ThingWorx_Flow_Install_Directory>
+```
+
+## Installation from Source
+
+1. Download the latest version of the connector from [src](src)
+2. Open a shell or terminal window on the ThingWorx Flow server.
+3. Change into the ptc-adls-connector directory containing the source files:
+```bash
+cd ptc-adls-connector
+```
+4. Run the following command to install the node.js modules:
+```bash
+npm install
+```
+5. Run the following command to deploy the custom connector package to the ThingWorx Flow installation directory:
+```bash
+flow-deploy connector --sourceDir . --targetDir <ThingWorx_Flow_Install_Directory> --allow_schema_overwrite
+```
+6. Run the following command to load connector metadata into the ThingWorx Flow server:
+```bash
+flow-deploy migrate -u <Username_for_ThingWorx_Flow_Database> -p <Password_for_ThingWorx_Flow_Database> --sourceDir <ThingWorx_Flow_Install_Directory>
 ```
 
 ## Documentation

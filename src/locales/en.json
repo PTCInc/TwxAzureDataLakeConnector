@@ -1,0 +1,105 @@
+//format=i18next
+{
+  // context:
+  "adls_tags": "Azure Data Lake Storage",
+
+  // context:
+  "conn_sharedkey_title": "Azure Storage Account Shared Key",
+  // context:
+  "conn_sharedkey_credentials_title": "Azure Storage Account Shared Key Credentials",
+  // context:
+  "conn_sharedkey_account_name": "Storage Account Name",
+  // context:
+  "conn_sharedkey_account_name_description": "Enter the storage account name",
+  // context:
+  "conn_sharedkey_accountkey": "Storage Account Access Key",
+  // context:
+  "conn_sharedkey_accountkey_description": "Enter the storage account access key",
+
+  // context:
+  "act_conn_sharedkey": "Shared Key Connection",
+
+  // context:
+  "act_list_containers_label": "List Containers",
+  // context:
+  "act_list_containers_output_title": "output",
+  // context:
+  "act_list_containers_entries_display_title": "Containers",
+  // context:
+  "act_list_containers_entries_items_display_title": "Items",
+  // context:
+  "act_list_containers_entries_items_container_name": "Container Name",
+
+  // context:
+  "act_list_blobs_label": "List Blobs",
+  // context:
+  "act_list_blobs_in_container_name": "Container Name",
+  // context:
+  "act_list_blobs_output_title": "output",
+  // context:
+  "act_list_blobs_entries_display_title": "Blobs",
+  // context:
+  "act_list_blobs_entries_items_display_title": "Items",
+  // context:
+  "act_list_blobs_entries_items_blob_name": "Blob Name",
+
+  // context:
+  "act_create_container_label": "Create Container",
+  // context:
+  "act_create_container_in_container_name": "Container Name",
+  // context:
+  "act_create_container_output_title": "output",
+  // context:
+  "act_create_container_out_name_created": "Container Name",
+
+  // context:
+  "act_delete_container_label": "Delete Container",
+  // context:
+  "act_delete_container_in_container_name": "Container Name",
+  // context:
+  "act_delete_container_output_title": "output",
+  // context:
+  "act_delete_container_out_name_deleted": "Container Name",
+
+  // context:
+  "act_delete_blob_label": "Delete Blob",
+  // context:
+  "act_delete_blob_in_container_name": "Container Name",
+  // context:
+  "act_delete_blob_in_blob_name": "Blob Name",
+  // context:
+  "act_delete_blob_output_title": "output",
+  // context:
+  "act_delete_blob_out_name_deleted": "Blob Name",
+
+  // context:
+  "act_upload_blob_label": "Upload Blob",
+  // context:
+  "act_upload_blob_in_container_name": "Container Name",
+  // context:
+  "act_upload_blob_in_blob_name": "Blob Name",
+  // context:
+  "act_upload_blob_in_data": "Data",
+  // context:
+  "act_upload_blob_in_encoding": "Encoding",
+  // context:
+  "act_upload_blob_output_title": "output",
+  // context:
+  "act_upload_blob_out_name_uploaded": "Blob Name",
+
+  // context:
+  "act_download_blob_label": "Download Blob",
+  // context:
+  "act_download_blob_in_container_name": "Container Name",
+  // context:
+  "act_download_blob_in_blob_name": "Blob Name",
+  // context:
+  "act_download_blob_output_title": "output",
+  // context:
+  "act_download_blob_output_data": "Data",
+  // context:
+  "act_download_blob_output_filename": "File Name",
+  // context:
+  "act_download_blob_output_filepath": "File Path"
+
+}

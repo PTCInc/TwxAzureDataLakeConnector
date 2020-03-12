@@ -1,0 +1,62 @@
+{
+  "name": "adls-delete-container",
+  "created_at": "2019-11-14T14:44:30.127Z",
+  "updated_at": "2019-11-14T14:44:30.127Z",
+  "uid": "7142045a26854336976b3e4834ae53fa",
+  "usage": {
+    "html": "adls:act_delete_container_label",
+    "link": {
+      "title": "Add title for the help link",
+      "href": "Add help link"
+    }
+  },
+  "default_value": "",
+  "act_type": "default",
+  "icon": "adls-delete-container",
+  "version": "v1",
+  "label": "adls:act_delete_container_label",
+  "__v": 0,
+  "validation": null,
+  "marketing_category": "file - storage",
+  "featured": false,
+  "development_phase": "beta",
+  "advanced_enabled": true,
+  "express_enabled": false,
+  "deleted_at": null,
+  "hide_settings": false,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "category": "service",
+  "input": {
+    "title": "adls:act_delete_container_label",
+    "type": "object",
+    "properties": {
+      "connection": {
+        "title": "adls:act_conn_sharedkey",
+        "type": "string",
+        "minLength": 1,
+        "connection": "adls-sharedkey"
+      },
+      "containerName": {
+        "title": "adls:act_delete_container_in_container_name",
+        "displayTitle": "adls:act_delete_container_in_container_name",
+        "description": "adls:act_delete_container_in_container_name",
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "output": {
+    "title": "adls:act_delete_container_output_title",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "adls:act_delete_container_out_name_deleted",
+        "displayTitle": "adls:act_delete_container_out_name_deleted"
+      }
+    }
+  }
+}

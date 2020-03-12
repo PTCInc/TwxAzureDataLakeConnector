@@ -1,0 +1,74 @@
+{
+  "name": "adls-download-blob",
+  "created_at": "2019-11-19T16:11:53.690Z",
+  "updated_at": "2019-11-19T16:11:53.690Z",
+  "uid": "b6fff35bbb4e4f2c82c2baa92bd11c57",
+  "usage": {
+    "html": "adls:act_download_blob_label",
+    "link": {
+      "title": "Add title for the help link",
+      "href": "Add help link"
+    }
+  },
+  "default_value": "",
+  "act_type": "default",
+  "icon": "adls-download-blob",
+  "version": "v1",
+  "label": "adls:act_download_blob_label",
+  "__v": 0,
+  "validation": null,
+  "marketing_category": "file - storage",
+  "featured": false,
+  "development_phase": "beta",
+  "advanced_enabled": true,
+  "express_enabled": false,
+  "deleted_at": null,
+  "hide_settings": false,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "category": "service",
+  "input": {
+    "title": "adls:act_download_blob_label",
+    "type": "object",
+    "properties": {
+      "connection": {
+        "title": "adls:act_conn_sharedkey",
+        "type": "string",
+        "minLength": 1,
+        "connection": "adls-sharedkey"
+      },
+      "containerName": {
+        "title": "adls:act_download_blob_in_container_name",
+        "displayTitle": "adls:act_download_blob_in_container_name",
+        "description": "adls:act_download_blob_in_container_name",
+        "type": "string",
+        "minLength": 1
+      },
+      "blobName": {
+        "title": "adls:act_download_blob_in_blob_name",
+        "displayTitle": "adls:act_download_blob_in_blob_name",
+        "description": "adls:act_download_blob_in_blob_name",
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "output": {
+    "title": "adls:act_download_blob_output_title",
+    "type": "object",
+    "properties": {
+      "filename": {
+        "title": "adls:act_download_blob_output_filename",
+        "type": "string",
+        "displayTitle": "adls:act_download_blob_output_filename"
+      },
+      "filepath": {
+        "title": "adls:act_download_blob_output_filepath",
+        "type": "string",
+        "displayTitle": "adls:act_download_blob_output_filepath"
+      }
+    }
+  }
+}

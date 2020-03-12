@@ -1,0 +1,35 @@
+{
+  "name": "ptc-adls-connector",
+  "version": "1.0.0",
+  "description": "Azure Data Lake Storage Connector",
+  "main": "index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "npm run unitTest",
+    "unitTest": "nyc mocha \"test/unitTest/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "^10.5.0",
+    "async": "^3.1.0",
+    "lodash": "^4.17.15",
+    "ptc-flow-sdk": "^2.0.61",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "nyc": "13.3.0",
+    "mocha": "4.0.1",
+    "standard": "10.0.3",
+    "ptc-flow-test-helper": "~2.0.0"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  }
+}

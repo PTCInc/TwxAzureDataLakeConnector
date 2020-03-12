@@ -1,0 +1,98 @@
+{
+  "name": "adls-list-containers",
+  "created_at": "2019-11-06T17:48:36.251Z",
+  "updated_at": "2019-11-06T17:48:36.251Z",
+  "uid": "f8cf3cb149cd4c219777f5d36c2c35a1",
+  "usage": {
+    "html": "adls:act_list_containers_label",
+    "link": {
+      "title": "Add title for the help link",
+      "href": "Add help link"
+    }
+  },
+  "default_value": "",
+  "act_type": "default",
+  "icon": "adls-list-containers",
+  "version": "v1",
+  "label": "adls:act_list_containers_label",
+  "__v": 0,
+  "validation": null,
+  "marketing_category": "file - storage",
+  "featured": false,
+  "development_phase": "beta",
+  "advanced_enabled": true,
+  "express_enabled": false,
+  "deleted_at": null,
+  "hide_settings": false,
+  "published": true,
+  "tags": [
+    "adls:adls_tags"
+  ],
+  "category": "service",
+  "input": {
+    "title": "adls:act_list_containers_label",
+    "type": "object",
+    "properties": {
+      "connection": {
+        "title": "adls:act_conn_sharedkey",
+        "type": "string",
+        "minLength": 1,
+        "connection": "adls-sharedkey"
+      }
+    }
+  },
+  "output": {
+    "title": "adls:act_list_containers_output_title",
+    "type": "object",
+    "properties": {
+      "entries": {
+        "type": "array",
+        "title": "adls:act_list_containers_entries_display_title",
+        "displayTitle": "adls:act_list_containers_entries_display_title",
+				"items": {
+					"type": "object",
+					"title": "adls:act_list_containers_entries_items_display_title",
+					"properties": {
+						"name": {
+							"type": "string",
+							"title": "adls:act_list_containers_entries_items_container_name",
+							"displayTitle": "adls:act_list_containers_entries_items_container_name"
+						},
+						"lastModified": {
+							"type": "string",
+							"title": "last modified"
+						},
+						"etag": {
+							"type": "string",
+							"title": "etag"
+						},
+						"leaseStatus": {
+							"type": "string",
+							"title": "least status"
+						},
+						"leastState": {
+							"type": "string",
+							"title": "lease state"
+						},
+						"hasImmutabilityPolicy": {
+							"type": "boolean",
+							"title": "has immutability policy"
+						},
+						"hasLegalHold": {
+							"type": "boolean",
+							"title": "has legal hold"
+						},
+						"DefaultEncryptionScope": {
+							"type": "string",
+							"title": "default encryption scope"
+						},
+						"DenyEncryptionScopeOverride": {
+							"type": "string",
+							"title": "deny encryption scope override"
+						}
+					}
+				}
+      }
+    }
+  }
+}
